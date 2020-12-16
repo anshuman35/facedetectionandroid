@@ -63,6 +63,9 @@ public class FaceGraphic extends GraphicOverlay.Graphic
      * Updates the face instance from the detection of the most recent frame. Invalidates the relevant
      * portions of the overlay to trigger a redraw.
      */
+     public void updateFinger(FirebaseVisionFace z,int xd){
+        postValidate();
+     }
     public void updateFace(FirebaseVisionFace face, int facing) {
         firebaseVisionFace = face;
         this.facing = facing;
